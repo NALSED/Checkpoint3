@@ -3,6 +3,7 @@
 
 ### Q.1.1.1 Créer l'utilisateur Lionel Lemarchand avec les même attribut de société que Kelly Rhameur.
 
+
 ![image](https://github.com/user-attachments/assets/fdb115b8-312c-43b2-9f19-60c566a8a950)
 
 ![image](https://github.com/user-attachments/assets/131f43fe-62b5-4bfd-a319-7ad70d5ec442)
