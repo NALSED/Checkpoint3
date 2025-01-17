@@ -106,13 +106,6 @@ https://github.com/user-attachments/assets/2d7921d4-be22-47ff-bc90-70ccc0b84d0f
 * #### Ajouter le disque
  ![image](https://github.com/user-attachments/assets/e6ec1b17-14a0-4e2a-a44c-8a7a2fe0b36e)
 
-* #### Intéroger les groupes de volumes
-![image](https://github.com/user-attachments/assets/26c9634b-7e69-4e6b-81fd-f59a1af13a65)
-          
-* #### Création du volume logique sauvegardes a partir de cp3-vg
-![image](https://github.com/user-attachments/assets/53f4b548-2e3e-4d32-99d5-a67985591a7b)
-
-
          
 #### Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 * #### Intéroger les groupes de volumes
