@@ -129,29 +129,47 @@ https://github.com/user-attachments/assets/2d7921d4-be22-47ff-bc90-70ccc0b84d0f
 
 
 #### Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ?
+* #### <1.79 Gib
+![image](https://github.com/user-attachments/assets/1a9b06c8-4f2d-4cd2-bc38-94728e29acef)
 
-Partie 4 : Sauvegardes
+
+#### Partie 4 : Sauvegardes
 Le logiciel bareos est installé sur le serveur.
 Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.
 
-Q.2.4.1 Expliquer succinctement les rôles respectifs des 3 composants bareos installés sur la VM.
+#### Q.2.4.1 Expliquer succinctement les rôles respectifs des 3 composants bareos installés sur la VM.
 
-Partie 5 : Filtrage et analyse réseau
-Q.2.5.1 Quelles sont actuellement les règles appliquées sur Netfilter ?
+* #### Bareos-dir (Directeur) gère la configuration et le planning des sauvegardes.
+* #### Bareos-sd (Stockage) gère le stockage et la récupération des données sauvegardées.
+* #### Bareos-fd (Client) exécute les sauvegardes et restaurations sur les systèmes clients.
+
+
+#### Partie 5 : Filtrage et analyse réseau
+#### Q.2.5.1 Quelles sont actuellement les règles appliquées sur Netfilter ?
 
 Q.2.5.2 Quels types de communications sont autorisées ?
+ * ####  iifname lo accept => interface en boucle locale
+ * #### tcp dport ssh accept => connexions TCP destinées au port SSH
+ * ####  ip protocol icmp accept => autorise les paquets ICMP à traverser le parfeu
+ * ####  ip6 nexthdr icmpv6 accept => autorise les paquets ICMPv6 à traverser le parfeu
 
-Q.2.5.3 Quels types sont interdit ?
+#### Q.2.5.3 Quels types sont interdit ?
+* #### ct state invalid drop => paquets invalide dropés
 
-Q.2.5.4 Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
+
+#### Q.2.5.4 Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
 
 Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.
+![image](https://github.com/user-attachments/assets/b518ce5f-ed9b-45ce-b845-9f99ef24d348)
 
-Partie 6 : Analyse de logs
-Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :
+#### Partie 6 : Analyse de logs
+#### Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :
 
 La date et l'heure de la tentative
 L'adresse IP de la machine ayant fait la tentative
+ #### ici il y en a deux mais avec l'option -n10 j'aurais pu filtrer les 10 dernières
+
+ ![image](https://github.com/user-attachments/assets/615c1dde-e734-4b1e-9384-73285eb8c92c)
 
 
 
