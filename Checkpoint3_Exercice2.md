@@ -10,13 +10,13 @@
 
 Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?
 
-* ####  Création d'un mot de passe fort
+* ####  Pour mon compte à usage personnel, je lui donnerais le moindre privilège pour qu'il ait accès juste a ce dont il a besoin. Je mettrais également un mot de passe robuste.
 
 
 ### Partie 2 : `Configuration de SSH`
 
-Un serveur SSH est lancé sur le port par défaut.
-Il est possible de s'y connecter avec n'importe quel compte, y compris le compte root.
+### Un serveur SSH est lancé sur le port par défaut.
+### Il est possible de s'y connecter avec n'importe quel compte, y compris le compte root.
 
 #### Q.2.2.1 Désactiver complètement l'accès à distance de l'utilisateur root.
 * #### editer le fichier  /etc/ssh/sshd_config.d/local.conf, ainsi on garde la configuration de base vierge et le fichier local.conf sera lut en premier
@@ -25,17 +25,10 @@ Il est possible de s'y connecter avec n'importe quel compte, y compris le compte
 ![image](https://github.com/user-attachments/assets/560a1712-2c38-47d6-9b83-9ed930dc0df1)
 
 
-
-
-
-
 #### Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.
 
 * #### Toujours dans /etc/ssh/sshd_config.d/local.conf
 ![image](https://github.com/user-attachments/assets/d0e1281b-071e-4737-b7eb-b68a9690cf13)
-
-
-
 
 #### Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
  
@@ -95,8 +88,8 @@ https://github.com/user-attachments/assets/7cddfdd3-1165-4dcf-a5b7-34662f262e44
 ### Partie 3 : Analyse du stockage
 
 #### Q.2.3.1 Quels sont les systèmes de fichiers actuellement montés ?
-![image](https://github.com/user-attachments/assets/6117cfd3-1d7f-40c2-8014-b1d9aada0cf2)
-
+                lsblk
+#### les fichier sont ext2 et ext4
 
 #### Q.2.3.2 Quel type de système de stockage ils utilisent ?
 
