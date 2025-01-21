@@ -100,11 +100,19 @@ https://github.com/user-attachments/assets/7cddfdd3-1165-4dcf-a5b7-34662f262e44
 ![image](https://github.com/user-attachments/assets/37cec455-072b-4462-ad59-8958fae6bd8f)
 
 #### Q.2.3.3 Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID
+
 * #### Ajouter le disque
  ![image](https://github.com/user-attachments/assets/e6ec1b17-14a0-4e2a-a44c-8a7a2fe0b36e)
 
-         
+* #### Création d'une partition sur le disque de 8 Go
+           fdisk /dev/sdb             
+* #### Réparer le RAID
+          mdadm --add /dev/md0 /dev/sdb1
+
+![image](https://github.com/user-attachments/assets/a3c275cd-eba9-40e5-91d1-0b7d17330dbb)
+
 #### Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
+
 * #### Intéroger les groupes de volumes
 ![image](https://github.com/user-attachments/assets/26c9634b-7e69-4e6b-81fd-f59a1af13a65)
           
