@@ -48,8 +48,10 @@
 
 ![1 2 1 ghul 5](https://github.com/user-attachments/assets/f1f4a05d-186e-4c92-8aab-85cfb3b847de)
 ### Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01.
-***************
-***************
+### Dans account => Log On To => mettre le nom du PC demandé
+![image](https://github.com/user-attachments/assets/61efad3f-0b39-4d9d-bd6a-8d2f43801652)
+
+
 
 ### Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.
 
