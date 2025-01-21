@@ -10,7 +10,7 @@
 
 
 ### Q.1.1.2 Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.
-
+#### Clic droit sur son compte disable account
 ![image](https://github.com/user-attachments/assets/4d747c74-cd84-4a36-83d1-5f0b8bd85780)
 
 ![image](https://github.com/user-attachments/assets/54377111-eccc-4188-b528-16f8007e7fee)
@@ -22,8 +22,10 @@
 ![image](https://github.com/user-attachments/assets/89793510-85fe-46f4-898c-f7767bcd9e1e)
 
 ### Q.1.1.3 Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.
-***************
-***************
+#### Remove les deux groupes
+![image](https://github.com/user-attachments/assets/e8693dec-2d41-4de2-bed5-ef852657961a)
+
+
 ### Q.1.1.4 Créer le dossier Individuel du nouvel utilisateur et archive celui de Kelly Rhameur en le suffixant par -ARCHIVE.
 
 ![création de dossier  Lionel Lemarchand 1 1 4](https://github.com/user-attachments/assets/d76c5738-f134-48f8-b46a-ec56e6e3f506)
