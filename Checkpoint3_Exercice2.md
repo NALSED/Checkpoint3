@@ -121,7 +121,8 @@ https://github.com/user-attachments/assets/7cddfdd3-1165-4dcf-a5b7-34662f262e44
 
 
 * ### Montage au démarage
-* #### formater le volume logique
+
+* #### formater le volume logique => formatage en ext4 (il est présent depuis le début, est-ce-que j'ai mal fait?)
 ![image](https://github.com/user-attachments/assets/08cdb93e-8e40-441c-80e2-253bc5185915)
 
 * #### Editer /etc/fstab 
@@ -153,9 +154,15 @@ Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une confi
                 nft list rulset
 
 #### Q.2.5.2 Quels types de communications sont autorisées ?
+
 * #### ct state established, related accept : les connexions déjà établies
+* #### iifname lo accept : trafic de bouclage
+* #### tcp dport ssh accept : ssh
+* #### ip protocol icmp accept : ping (icmp)
+* #### ip6 nexthdr icmpv6 accept : ping6 (icmpv6)
 
 #### Q.2.5.3 Quels types sont interdit ?
+
 * #### ct state invalid drop : paquets ne pouvant pas être identifiés et tout le reste
 
 #### Q.2.5.4 Sur nftables, ajouter les règles nécessaires pour autoriser bareos à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.
