@@ -21,8 +21,13 @@
 
 ![image](https://github.com/user-attachments/assets/89793510-85fe-46f4-898c-f7767bcd9e1e)
 
+* #### Désactiver le compote de kely => clic droit Disable Account
+
+
 ### Q.1.1.3 Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.
-#### Remove les deux groupes
+
+* #### Remove le groupe => DirectionDesRessourcesHumaines
+
 ![image](https://github.com/user-attachments/assets/e8693dec-2d41-4de2-bed5-ef852657961a)
 
 
